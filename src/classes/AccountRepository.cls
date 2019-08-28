@@ -9,4 +9,15 @@ public class AccountRepository {
         return accounts;
     }
 
+    public Account save (Account account){
+        if (account.Id == null){
+            insert account;
+        } else {
+            update account;
+        }
+        return account;
+    }
+
+
+
 }
